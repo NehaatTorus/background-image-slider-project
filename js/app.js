@@ -18,7 +18,7 @@
     button.addEventListener('click', function(e){
       if (button.classList.contains('btn-left')){
         counter--
-        if(counter < 0){
+        if(counter <= 0){
           counter = pictures.length -1
         }
         imageDIV.style.backgroundImage = `url('./img/${pictures[counter]}.jpeg')`
